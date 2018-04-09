@@ -1,0 +1,44 @@
+html,body,ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+ 
+ .wrap-container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: rgba(24, 26, 41, 0.9);
+}
+.wrap-container ul.imglist{
+    width: 300%;
+    padding: 5% 10%;
+    overflow: hidden;
+}
+ .wrap-container ul.imglist li{
+    width: 16%;
+    float: left;
+    margin: 0 2%;
+    
+}
+.wrap-container ul.imglist{
+    margin-left: -50%;
+}
+.wrap-container ul.imglist li img{
+    width: 100%;
+}
+.prev-btn,
+.next-btn{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform:translateY(-50%);
+}
+.prev-btn{
+    left: 18%;
+}
+.next-btn{
+    right: 18%;
+}

@@ -1,0 +1,46 @@
+
+   jQuery�����   
+
+   http://www.jq22.com 
+
+   �ҵĸ��٣����ĸ��࣡ jQuery�����ֻΪ���ṩ��õģ�
+jQuery编写插件的两种方法
+
+
+1.添加jQuery对象级的插件，是给jQuery类添加方法
+
+;(function($){  
+    $.fn.extend({  
+        "函数名":function(自定义参数){  
+            //这里写插件代码  
+        }  
+    });  
+})(jQuery);  
+或者  
+;(function($){  
+    $.fn.函数名=function(自定义参数){  
+        //这里写插件代码  
+    }  
+})(jQuery); 
+
+
+调用方法：$("#id").函数名(参数);
+		
+2.jQuery类级别的插件，相当于添加静态方法
+
+;(function($){  
+    $.extend({  
+        "函数名":function(自定义参数){  
+            //这里写插件代码  
+        }  
+    });  
+})(jQuery);  
+或者  
+;(function($){  
+    $.函数名=function(自定义参数){  
+        //这里写插件代码  
+    }  
+})(jQuery);  
+
+
+调用方法：$.函数名(参数);
